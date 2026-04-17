@@ -3,16 +3,14 @@ using namespace  std;
 
 int main(){
 
-    int x;
-    cout<< "enter ur age";
-    cin >> x;
+    int y ,z , h;
+    cout<< "enter n1";
+    cin >> y;
+   cout<< "enter n2";
+    cin >> z;
 
-    if(x > 20){
-        cout<< "good";
-    }
-     else{
-        cout << "not good";
-     }
+h = y*z;
+cout<< h;
      
        
 }
