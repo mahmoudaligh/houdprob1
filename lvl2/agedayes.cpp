@@ -1,14 +1,19 @@
 #include <iostream>
-using namespace  std;
+using namespace std;
 
-int main(){
+int main() {
+    int d;
+    cin >> d;
 
-    int x , y , z , h , m ; cin>>x;
-    y = x / 365;       
-    z = x % 365;       
-    h = z / 30;         
-    m = z % 30;         
-    cout << y << " years\n";
-    cout << h << " months\n" ;
-    cout << m  << " day\n";
+    int years = d / 365;
+    int remaining = d % 365;
+
+    int months = remaining / 30;
+    int days = remaining % 30;
+
+    cout << years << " years\n";
+    cout << months << " months\n";
+    cout << days << " days\n";
+
+    return 0;
 }
